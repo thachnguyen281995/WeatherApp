@@ -43,7 +43,7 @@ const body = $('body')
     
 }
 search.addEventListener('keypress',function(e){
-    if(e.code === "Enter"){
+    if(e.code === "Enter"|| "KeyEvent.KEYCODE_ENTER"){
     let capitalValue = search.value.trim()
 
         changeWeatherUI(capitalValue)
